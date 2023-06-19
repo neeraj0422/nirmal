@@ -8,6 +8,7 @@ import image5 from './component/images/a6.jpg';
 import image6 from './component/images/a7.jpg';
 import image8 from './component/images/a8.jpg';
 import image9 from './component/images/a9.png';
+import LoginForm from './component/login';
 
 class MyComponent extends Component {
   constructor(props) {
@@ -73,7 +74,7 @@ class MyComponent extends Component {
               </li>
               <li style={{ marginLeft: "40px" }}><a className='nav-link' style={{ color: "black" }}>HOME</a></li>
               <li style={{ marginLeft: "40px" }}><a className='nav-link' style={{ color: "black" }}>BLOG/POST</a></li>
-              <li style={{ marginLeft: "40px" }}><a className='nav-link' style={{ color: "black" }}>Sign In</a></li>
+              <li style={{ marginLeft: "40px" }}><a href = '#LoginPage' className='nav-link' style={{ color: "black" }}>Sign In</a></li>
               <li style={{ marginLeft: "40px" }}>
                 <a className='nav-link' style={{ color: "black" }} onClick={this.toggleContact}>Schedule a Call</a>
                 {isContactOpen && (
@@ -180,6 +181,7 @@ class MyComponent extends Component {
        
         </div>
      {/* </div> */}
+     <LoginForm/>
     </div>
   )}
 }

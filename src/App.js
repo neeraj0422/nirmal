@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import video from './component/video/v10.mp4';
-import image1 from './component/images/a1.jpg';
+import image1 from './component/images/a111.png';
 import image2 from './component/images/a3.jpg';
 import image3 from './component/images/a4.jpg';
 import image4 from './component/images/a5.jpg';
@@ -39,7 +39,7 @@ class MyComponent extends Component {
         <header style={{ position: 'sticky', top: 0, zIndex: 999, backgroundColor: '#e3f2fd', color: 'white' }}>
           <nav style={{ display: 'flex', height: '78px' }}>
             <div style={{ display: 'flex', flexDirection: 'row', maxWidth: '0.01%' }}>
-              <img className="a1" style={{ display: 'inline', width: '400px', height: '78px' }} src={image1} alt="Logo" />
+              <img className="a1" style={{ display: '100%', width: '25em', height: '88px' }} src={image1} alt="Logo" />
             </div>
             <ul style={{ display: "flex", justifyContent: "space-between", marginLeft: "190px", marginTop: "43px" }}>
               <li style={{ marginLeft: "40px", marginTop: "-7px" }}>
@@ -72,8 +72,9 @@ class MyComponent extends Component {
                   </div>
                 )}
               </li>
-              <li style={{ marginLeft: "40px" }}><a className='nav-link' style={{ color: "black" }}>HOME</a></li>
-              <li style={{ marginLeft: "40px" }}><a className='nav-link' style={{ color: "black" }}>BLOG/POST</a></li>
+              <li style={{ marginLeft: "40px" }}><a className='nav-link' style={{ color: "black" }}>HOME</a></li><li style={{ marginLeft: "40px" }}>
+  <a className='nav-link' style={{ color: "black" }} href="https://blog-eight-alpha.vercel.app/">BLOG/POST</a>
+</li>
               <li style={{ marginLeft: "40px" }}><a href = '#LoginPage' className='nav-link' style={{ color: "black" }}>Sign In</a></li>
               <li style={{ marginLeft: "40px" }}>
                 <a className='nav-link' style={{ color: "black" }} onClick={this.toggleContact}>Schedule a Call</a>
@@ -181,7 +182,7 @@ class MyComponent extends Component {
        
         </div>
      {/* </div> */}
-     <LoginForm/>
+     
     </div>
   )}
 }
